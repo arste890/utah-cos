@@ -2254,15 +2254,5 @@
     </table>
     <!-- End -->
 </body>
-<script>
-    window.addEventListener('message', function (event) {
-        if (event.origin !== 'http://utah.kesug.com/') return;
-        if (event.data === 'hello') {
-            event.source.postMessage({
-                height: document.body.scrollHeight
-            }, event.origin);
-        }
-    }, false);
-</script>
 
 </html>
