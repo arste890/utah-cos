@@ -936,6 +936,11 @@
 			</tr>
 		</tbody>
 	</table><!-- End -->
+	<script>window.onload = function() {
+		var height = document.body.scrollHeight;
+		window.parent.postMessage(["setIframeHeight", height], "*");
+	};
+	</script>
 </body>
 
 </html>
